@@ -1,0 +1,191 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./Styles/Products.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="./Styles/img/Powergy-min.png">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  </head>
+  <body>
+    <div id="loader" class="loader"></div>
+    <!-- Rest of your HTML content -->
+    <header>
+      <div class="header-info">
+        <div class="container m-a flex">
+          <div class="header-button">
+            <button>Products Inquery</button>
+          </div>
+          <div class="header-contact flex">
+            <a href="tel:+982191300507" class="phone">
+              <i class="fa fa-phone"> </i>
+              Call Us
+            </a>
+            <a href="mailto:support@powergygenerator.com" class="email">
+              <i class="fa fa-envelope"> </i>
+              E-mail Us
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <div class="header-items m-a container flex">
+          <div class="logo">
+            <img src="./Styles/img/Powergy-wide.png" alt="" />
+          </div>
+          <div class="header-nav">
+            <ul class="flex">
+              <li class="nav-item"><a href="../index.html">Home</a></li>
+              <li class="nav-item"><a href="./Products.html">Products</a></li>
+              <li class="nav-item">
+                <a href="../About-Us/About-Us.html">About Us</a>
+              </li>
+              <li class="nav-item"><a href="#contact">Contact Us</a></li>
+              <!-- <li class="nav-item"><a href="#">Verify</a></li> -->
+            </ul>
+          </div>
+          <div class="header-menubar">
+            <label class="header-menu flex">
+              <input type="checkbox" />
+            </label>
+            <div class="hamburger-menu flex">
+              <a href="../index.html">Home</a>
+              <a href="./Products.html">Products</a>
+              <a href="../About-Us/About-Us.html">About Us</a>
+              <a href="../index.html#contact">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="products-head-image">
+        <img
+          src="./Styles/img/ebalanceplus_social-twitter-cov.jpg"
+          alt="Products-head"
+        />
+      </div>
+      <div class="padding3em">
+        <div class="container m-a center">
+          <div class="products flex">
+            <div class="products-head flex">
+              <h1 class="products-head-title left">
+                Integrated power solutions for your complex energy challenges
+              </h1>
+              <p class="products-head-info left">
+                We've enlisted the best engineers and scientists to build power
+                solutions ready to support you no matter where you are on the
+                journey to cleaner power.
+              </p>
+            </div>
+            <div class="products-items flex">
+              <a
+                href="./GenSets/Generators.html"
+                class="products-card flex left"
+              >
+                <img src="./Styles/img/GeneratorsPowerSystems.jpg" alt="" />
+                <h2 class="products-card-name left">
+                  Generators and Power Systems
+                </h2>
+                <p class="left">
+                  Our fully integrated power systems ensure you always have
+                  reliable power for your job site or home.
+                </p>
+                <div class="product-card-button relative">
+                  <button class="product-button">
+                    Read More <i class="fa fa-chevron-right"></i>
+                  </button>
+                </div>
+              </a>
+              <div class="products-line"></div>
+              <a
+                href="./Solar/wind.html"
+                class="products-card flex left"
+              >
+                <img src="./Styles/img/Wind Turbine.jpg" alt="" />
+                <h2 class="products-card-name left">Solar and wind</h2>
+                <p class="left">
+                  Our fully integrated power systems ensure you always have
+                  reliable power for your job site or home.
+                </p>
+                <div class="product-card-button relative">
+                  <button class="product-button">
+                    Read More <i class="fa fa-chevron-right"></i>
+                  </button>
+                </div>
+              </a>
+              <div class="products-line"></div>
+              <a
+                href="./Alternators/Alternators.html"
+                class="products-card flex left"
+              >
+                <img src="./Styles/img/Alternator.jpg" alt="" />
+                <h2 class="products-card-name left">Alternators</h2>
+                <p class="left">
+                  Our fully integrated power systems ensure you always have
+                  reliable power for your job site or home.
+                </p>
+                <div class="product-card-button relative">
+                  <button class="product-button">
+                    Read More <i class="fa fa-chevron-right"></i>
+                  </button>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="padding7em-top">
+        <div class="container m-a">
+          <div class="heading center">
+            <h1>Contact Us</h1>
+            <p>WE LOVE TO HEAR FROM YOU</p>
+          </div>
+        </div>
+      </div>
+      <div class="padding7em background-fa" id="contact">
+        <div class="container m-a padding7em background-white">
+          <div class="contact heading flex">
+            <div class="contact-card flex">
+              <h4>Phone</h4>
+              <span>
+                <a href="tel:+12543007919" class="phone"> +1 (254) 300 7919 </a>
+              </span>
+            </div>
+            <div class="contact-card flex">
+              <h4>E-Mail</h4>
+              <span>
+                <a href="mailto:support@powergygenerator.com" class="email">
+                  support@powergygenerator.com
+                </a></span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      document.body.classList.add('loading');
+    
+      window.addEventListener('load', function() {
+        const minDisplayTime = 2000; // 2 seconds
+        const startTime = new Date().getTime();
+    
+        function hideLoader() {
+          document.getElementById('loader').style.display = 'none';
+          document.body.classList.remove('loading');
+        }
+    
+        const elapsedTime = new Date().getTime() - startTime;
+    
+        if (elapsedTime < minDisplayTime) {
+          setTimeout(hideLoader, minDisplayTime - elapsedTime);
+        } else {
+          hideLoader();
+        }
+      });
+    </script>
+    
+  </body>
+</html>

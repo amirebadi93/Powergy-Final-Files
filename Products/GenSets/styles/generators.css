@@ -1,0 +1,125 @@
+@import url(./general.css);
+@import url(./header.css);
+@import url(./Contact.css);
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5em;
+}
+body.loading {
+  overflow: hidden;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white; /* White background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.loader::before {
+  content: '';
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.generator-head-img {
+  width: 100%;
+}
+.generator-head-img > img {
+  width: 100vw;
+}
+.generator-head-text {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.generator-head-text > h1 {
+  color: #00baa3;
+  font-weight: bold;
+  font-size: 48px;
+  padding: 0 10px;
+  line-height: 1.5em;
+}
+.generator-head-text > span {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 1.5em;
+}
+.generators-list {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  height: max-content;
+}
+.generators-card {
+  width: 250px;
+  margin: 0 0 50px;
+  align-content: space-between;
+  height: 100%;
+  justify-items: flex-start;
+}
+.card-specs {
+  height: 100%;
+  width: 100%;
+}
+.card-img {
+  background-color: #f2f2f2;
+  width: 100%;
+  border-radius: 9px;
+  margin: 0 0 20px;
+  height: 200px;
+  align-content: center;
+}
+.card-name {
+  margin: 0 0 20px;
+  font-weight: bold;
+}
+.card-info {
+  justify-content: space-between;
+  border-bottom: solid #474747 1px;
+  margin: 0 0 10px;
+  padding: 0 0 10px;
+}
+.card-info-name {
+  color: #474747;
+}
+.card-info-data {
+  color: black;
+  font-weight: bold;
+}
+.card-button {
+  text-decoration: none;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  color: black;
+  border-radius: 9px;
+  text-align: center;
+  margin-top: 20px;
+}
+@media only screen and (max-width: 800px) {
+  .generators-list {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,222 @@
+@font-face {
+    font-family: roboto-extra;
+    src: url(./Fonts/Roboto/static/Roboto-ExtraLight.ttf);
+  }
+  @font-face {
+    font-family: roboto-light;
+    src: url(./Fonts/Roboto/static/Roboto-Light.ttf);
+  }
+  @font-face {
+    font-family: roboto;
+    src: url(./Fonts/Roboto/static/Roboto-Medium.ttf);
+  }
+  @font-face {
+    font-family: roboto-bold;
+    src: url(./Fonts/Roboto/static/Roboto-Bold.ttf);
+  }
+  @font-face {
+    font-family: poppins;
+    src: url(./Fonts/Poppins-Medium.ttf);
+  }
+  @font-face {
+    font-family: nova;
+    src: url(./Fonts/proxima-nova/Proxima\ Nova\ Alt\ Light.otf);
+  }
+  @font-face {
+    font-family: nova-extra;
+    src: url(./Fonts/proxima-nova/Proxima\ Nova\ Extra\ Condensed\ Light.otf);
+  }
+  @keyframes image {
+   100% {
+      width: 100%;
+      border-radius: 11px;
+    }
+  }
+  @keyframes fade-out {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: roboto-light;
+    font-weight: 200;
+    font-size: 18px;
+  }
+  h1 {
+    font-family: poppins;
+    margin: 0 0 16px;
+  }
+  h4 {
+    font-family: roboto-light;
+    margin: 0 0 16px;
+    padding: 0;
+  }
+  p {
+    font-family: roboto-extra;
+    font-size: 16px;
+    line-height: 1.8em;
+  }
+  .inline{
+    display: inline-block;
+  }
+  .align-center{
+    align-items: center;
+  }
+  .justify-center{
+    justify-content: center;
+  }
+  .flex-column{
+    display: flex;
+    flex-direction: column;
+  }
+  .center {
+    text-align: center;
+  }
+  .left{
+    text-align: left;
+  }
+  .container {
+    max-width: 1250px;
+    /* box-sizing: border-box; */
+  }
+  .heading{
+    width: 60%;
+    margin: auto;
+  }
+  .heading-products{
+    /* width: 80%; */
+    margin: auto;
+  }
+  .heading > h1 {
+    font-family: nova;
+    margin: 0 0 16px;
+    text-align: center;
+    font-weight: 400;
+  }
+  .heading-products > h1{
+    font-family: nova;
+    margin: 0 0 16px;
+    font-weight: 600;
+    font-size: 45px;
+  }
+  .heading > h4  {
+    font-family: nova;
+    font-size: 24px;
+    font-weight: 400;
+  }
+  .heading-products > h4 {
+    font-family: nova;
+    font-size: 24px;
+    font-weight: 800;
+  }
+  .heading > P , .heading-products > p{
+    margin: 0 0 24px;
+  }
+  .heading-products > p{
+    font-family: nova;
+    line-height: 1.8em;
+    font-size: 20px;
+  }
+  .dim02 {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+  }
+  .flex {
+    display: flex;
+  }
+  .fixed{
+    position: fixed;
+  }
+  .m-a {
+    margin: auto;
+  }
+  .width100 {
+    width: 100%;
+  }
+  .relative {
+    position: relative;
+  }
+  .absolute {
+    position: absolute;
+  }
+  .padding7em {
+    padding: 7em 0;
+  }
+  .padding3em{
+    padding: 3em;
+  }
+  .padding7em-top{
+    padding: 7em 0 0 ;
+  }
+  .background-fa {
+    background-color: #fafafa;
+  }
+  .background-white{
+    background-color: white;
+  }
+  .border-top-bottom {
+    border-top: solid #e0e0e0 1px;
+    border-bottom: solid #e0e0e0 1px;
+  }
+  @media only screen and (min-width:1024px) and (max-width: 1250px ) {
+    .container{
+      max-width: 960px ;
+    }
+    .heading{
+      width: 80%;
+    }
+
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1023px ) {
+    .container{
+      max-width: 730px ;
+    }
+    .heading{
+      width: 80%;
+    }
+    .padding7em{
+      padding: 3em 0;
+    }
+    .padding7em-top{
+      padding: 3em 0 0;
+    }
+  }
+  @media only screen and (min-width: 500px) and (max-width: 766px ) {
+    .container{
+      max-width: 490px ;
+    }
+    .heading{
+      width: 80%;
+    }
+    .padding7em{
+      padding: 3em 0;
+    }
+    .padding7em-top{
+      padding: 3em 0 0;
+    }
+
+  }
+  @media only screen and (min-width: 300px) and (max-width: 499px ) {
+    .container{
+      max-width: 90% ;
+    }
+    .padding3em{
+      padding: 3em 0;
+    }
+    .heading{
+      width: 90%;
+
+    }
+    .padding7em{
+      padding: 3em 0;
+    }
+    .padding7em-top{
+      padding: 3em 0 0;
+    }
+  }

@@ -1,0 +1,138 @@
+@import url(./general.css);
+@import url(./header.css);
+@import url(./Contact.css);
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5em;
+}
+body.loading {
+  overflow: hidden;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white; /* White background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.loader::before {
+  content: '';
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.wind-head{
+  padding: 3em 0 0 ;
+}
+.wind-head-img {
+  height: 65vh;
+  background-image: url(./img/wind-head.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.wind-head-img > img {
+  height: 65vh;
+  width: 100%;
+  opacity: 0;
+}
+
+.wind-head-text {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.wind-head-text > h1 {
+  color: #00baa3;
+  font-weight: bold;
+  font-size: 48px;
+  padding: 0 10px;
+  line-height: 1.5em;
+  margin: 0;
+}
+.wind-head-text > span {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 1.5em;
+}
+.line50{
+  height: 2px;
+  width: 50vw;
+  background-color: gray;
+  margin: 20px auto;
+}
+.turbine-image{
+width: 40%;
+}
+.turbine-image > img{
+  width: 100%;
+  }
+  .turbine-text{
+    width: 50%;
+    line-height: 2em;
+  }
+  .middle-img{
+    max-height: 80vh;
+    background-image: url(./img/Turbine-blue.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .middle-img>img{
+    height: 80vh;
+    width: 100%;
+    opacity: 0;
+  }
+  .middle-text{
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    line-height: 2em;
+    font-size: 22px;
+    text-align: center;
+  }
+  .middle-text h1{
+    font-weight: bold;
+
+  }
+  .middle-text p{
+    font-weight: 400;
+    font-size: 18px;
+  }
+  @media only screen and (max-width:1200px){
+    .heading{
+      width: 90%;
+    }
+    .middle-text h1{
+      font-weight: bold;
+      font-size: 18px;
+  
+    }
+    .middle-text p{
+      font-weight: 400;
+      font-size: 14px;
+    }
+  }

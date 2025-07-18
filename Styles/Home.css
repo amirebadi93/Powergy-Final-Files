@@ -1,0 +1,401 @@
+@import url(./header.css);
+@import url(./general.css);
+@import url(./Contact.css);
+
+body.loading {
+  overflow: hidden;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white; /* White background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.loader::before {
+  content: '';
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+p {
+  font-family: roboto-extra;
+  font-size: 16px;
+  line-height: 1.8em;
+  text-align: center;
+}
+img{
+  margin-bottom: 45px;
+}
+.cover {
+  background-image: url(./img/header-bg.jpg.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  animation: fade-out 1s;
+  animation-timeline: scroll();
+  animation-range-start: 30vh;
+  animation-range-end: 95vh;
+}
+.cover-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  text-transform: uppercase;
+  height: 100%;
+}
+.cover-content > p {
+  margin: 0 0 8px 0;
+  text-align: center;
+  width: 50%;
+  line-height: 2em;
+  font-size: 14px;
+}
+.cover-social {
+  left: 10px;
+  top: 50%;
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  align-items: center;
+}
+.cover-line {
+  width: 30px;
+  margin: 0 10px 0px;
+  height: 2px;
+  background-color: white;
+}
+.cover-social > a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  font-family: roboto-bold;
+}
+.services {
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 7em auto;
+}
+.service-card {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  padding: 15px;
+}
+.service-card > div>img {
+  width: 70px;
+  /* margin-bottom: 45px; */
+}
+.service-card > p {
+  width: 80%;
+}
+.product-container{
+	display: none;
+}
+.product {
+  align-items: center;
+  justify-content: space-around;
+}
+.product-info {
+  width: 30%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 16px;
+  margin: 100px 0;
+}
+.product-info > p {
+  text-align: left;
+}
+.product-info > span {
+  font-size: 24px;
+  font-weight: 400;
+}
+.product-img > img {
+  max-height: 277px;
+}
+.care-img {
+  width: 75%;
+  height: 75vh;
+  border-radius: 35px;
+  animation: image 1s forwards;
+  animation-timeline: view();
+  animation-range-start: 15vh;
+  animation-range-end: 90vh;
+  background-image: url(./img/Green.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.care-img > img {
+  height: 100%;
+  opacity: 0;
+  max-width: 100%;
+
+
+  /* border-radius: 25px;
+  width: 75%;
+  animation: image 1s forwards;
+  animation-timeline: view();
+  animation-range-start: 15vh;
+  animation-range-end: 180vh; */
+}
+.care-info{
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 35px;
+  animation: image 1s forwards;
+  animation-timeline: view();
+  animation-range-start: 15vh;
+  animation-range-end: 90vh;
+}
+.care-text{
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  color: white;
+  width: 30vw;
+
+}
+.scroll {
+  height: 5000px;
+}
+.energy-data {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.energy-card {
+  justify-content: space-between;
+  align-items: center;
+}
+.energy-card p {
+  text-align: left;
+}
+
+.energy-img > img {
+  width: 400px;
+}
+.projects {
+  background-color: #252931;
+  color: white;
+  text-align: center;
+}
+.projects-data {
+  justify-content: space-around;
+  margin: 40px 0;
+  gap: 20px;
+}
+.projects-card {
+  flex-direction: column;
+  align-items: center;
+  margin: 24px 10px;
+  width: 30%;
+}
+.projects-card > p {
+width: 70%;
+}
+
+  
+.projects h1 {
+  font-family: nova;
+}
+.projects-img > img {
+  width: 70px;
+  margin: 24px 0;
+}
+@media only screen and (min-width:1024px) and (max-width: 1250px ) {
+  img{
+    margin-bottom: 20px;
+  }
+.services{
+  flex-direction: column;
+
+}
+  .service-card{
+  flex-direction: row;
+  width: 80%;
+}
+.product-info{
+  width: 40%;
+}
+.care-text{
+  width: 40vw;
+}
+.energy-card{
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  /* width: 100%; */
+}
+}
+@media only screen and (min-width: 786px) and (max-width: 1023px ) {
+  img{
+    margin-bottom: 20px;
+  }
+.services{
+  flex-direction: column;
+
+}
+  .service-card{
+  flex-direction: row;
+  width: 100%;
+}
+.product-info{
+  width: 50%;
+}
+.care-text{
+  width: 60vw;
+}
+.energy-card{
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  /* width: 100%; */
+}
+.projects-data{
+  flex-direction: column;
+}
+.projects-card{
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.projects-card > div {
+  width: 25%;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 785px ) {
+  img{
+    margin-bottom: 20px;
+  }
+.services{
+  flex-direction: column;
+}
+.product{
+  flex-direction: column;
+}
+  .service-card{
+  flex-direction: row;
+  width: 100%;
+  box-sizing: border-box;
+}
+.product-info{
+  width: 100%;
+}
+.care-text{
+  width: 60vw;
+}
+.energy-img>img{
+  width: 100%;
+}
+.energy-card{
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.projects-data{
+  flex-direction: column;
+}
+.projects-card{
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+.projects-card > div {
+  width: 25%;
+  }
+}
+@media only screen and (min-width: 300px) and (max-width: 499px ) {
+  .cover h1{
+    font-size: 24px;
+  }
+	.cover-content > p{
+		display: none;
+	}
+  .cover-social{
+	  top: 80%; 
+	}
+  img{
+    margin-bottom: 20px;
+  }
+.services{
+  flex-direction: column;
+
+}
+.product{
+  flex-direction: column;
+}
+  .service-card{
+  /* flex-direction: row; */
+  width: 100%;
+  box-sizing: border-box;
+}
+.product-info{
+  width: 100%;
+}
+.care-img{
+  animation: none ;
+  width: 100%;
+}
+.care-img>img{
+  width: 100%;
+}
+.care-text{
+  width: 60vw;
+}
+.energy-img>img{
+  width: 100%;
+}
+.energy-card{
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.projects-data{
+  flex-direction: column;
+}
+.projects-card{
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+.projects-card > div {
+  width: 25%;
+  }
+}

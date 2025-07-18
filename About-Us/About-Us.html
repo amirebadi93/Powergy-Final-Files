@@ -1,0 +1,115 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./Styles/About-Us.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="./Styles/img/Powergy-min.png">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  </head>
+  <body>
+    <div id="loader" class="loader"></div>
+    <!-- Rest of your HTML content -->
+    <header>
+      <div class="header flex">
+        <div class="header-top flex">
+          <div class="logo">
+            <img src="./Styles/img/Powergy-wide.png" alt="" />
+          </div>
+          <div class="header-nav">
+            <ul class="flex">
+              <li class="nav-item flex"><a href="../index.html">Home</a></li>
+              <li class="nav-item flex">
+                <a href="../Products/Products.html">Products</a>
+              </li>
+              <li class="nav-item flex"><a href="#">About Us</a></li>
+              <!-- <li class="nav-item flex"><a href="#contact">Contact Us</a></li> -->
+              <!-- <li class="nav-item flex"><a href="#">Verify</a></li> -->
+            </ul>
+          </div>
+        </div>
+        <div class="header-line"></div>
+        <div class="header-bottom">
+          <div class="header-contact flex">
+            <a href="tel:+12543007919" class="phone">
+              <i class="fa fa-phone"> </i>
+              <div class="header-contact-info">Call Us</div>
+            </a>
+            <a href="mailto:support@powergygenerator.com" class="email">
+              <i class="fa fa-envelope"> </i>
+              <div class="header-contact-info">Contact Us</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="relative">
+      <div class="cover flex relative">
+        <div class="cover-text flex">
+          <h1>Build tomorrow's world <span>NOW</span></h1>
+        </div>
+        <div class="cover-line Absolute"></div>
+      </div>
+      <div class="Members absolute flex m-a">
+        <div class="members-card Jakob relative">
+          <!-- <div class="dim absolute"></div> -->
+          <img src="./Styles/img/Mr. Marcin Bafar .png" alt="" />
+          <div class="members-info absolute flex">
+            <h3>Mr. Jakob Sener</h3>
+            <h3>Founder & CEO</h3>
+          </div>
+        </div>
+        <div class="members-card Kristina relative">
+          <!-- <div class="dim absolute"></div> -->
+          <img src="./Styles/img/Mr. Marcin Bafar .png" alt="" />
+          <div class="members-info absolute flex">
+            <h3>Mrs. Kristina Tenna</h3>
+            <h3>Business Development Manager</h3>
+          </div>
+        </div>
+        <div class="members-card Anne relative">
+          <!-- <div class="dim absolute"></div> -->
+          <img src="./Styles/img/Mr. Marcin Bafar .png" alt="" />
+          <div class="members-info absolute flex">
+            <h3>Mrs. Anna Neri</h3>
+            <h3>Commercial Manager</h3>
+          </div>
+        </div>
+        <div class="members-card Marcin relative">
+          <!-- <div class="dim absolute"></div> -->
+          <img src="./Styles/img/Mr. Marcin Bafar .png" alt="" />
+          <div class="members-info absolute flex">
+            <h3>Mr. Marcin Bafar</h3>
+            <h3>Power Plant manager</h3>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      document.body.classList.add('loading');
+    
+      window.addEventListener('load', function() {
+        const minDisplayTime = 2000; // 2 seconds
+        const startTime = new Date().getTime();
+    
+        function hideLoader() {
+          document.getElementById('loader').style.display = 'none';
+          document.body.classList.remove('loading');
+          
+          // Start the cover animation
+          document.querySelector('.cover').classList.add('start-animation');
+        }
+    
+        const elapsedTime = new Date().getTime() - startTime;
+    
+        if (elapsedTime < minDisplayTime) {
+          setTimeout(hideLoader, minDisplayTime - elapsedTime);
+        } else {
+          hideLoader();
+        }
+      });
+    </script>
+    
+  </body>
+</html>
